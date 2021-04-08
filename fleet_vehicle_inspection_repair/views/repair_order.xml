@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2021 - TODAY, Marcel Savegnago <marcel.savegnago@escodoo.com.br>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+<!--    <record model="ir.ui.view" id="repair_order_form_view">-->
+<!--        <field name="name">repair.order.form (in fleet_vehicle_inspection_repair)</field>-->
+<!--        <field name="model">repair.order</field>-->
+<!--        <field name="inherit_id" ref="TODO othermodule.form_view"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            &lt;!&ndash; TODO &ndash;&gt;-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record model="ir.ui.view" id="repair_order_search_view">-->
+<!--        <field name="name">repair.order.search (in fleet_vehicle_inspection_repair)</field>-->
+<!--        <field name="model">repair.order</field>-->
+<!--        <field name="inherit_id" ref="TODO othermodule.search_view"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            &lt;!&ndash; TODO &ndash;&gt;-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record model="ir.ui.view" id="repair_order_tree_view">-->
+<!--        <field name="name">repair.order.tree (in fleet_vehicle_inspection_repair)</field>-->
+<!--        <field name="model">repair.order</field>-->
+<!--        <field name="inherit_id" ref="TODO othermodule.tree_view"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            &lt;!&ndash; TODO &ndash;&gt;-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record model="ir.actions.act_window" id="repair_order_act_window">-->
+<!--        <field name="name">Repair Order</field> &lt;!&ndash; TODO &ndash;&gt;-->
+<!--        <field name="res_model">repair.order</field>-->
+<!--        <field name="view_mode">tree,form</field>-->
+<!--        <field name="domain">[]</field>-->
+<!--        <field name="context">{}</field>-->
+<!--    </record>-->
+
+<!--    <record model="ir.ui.menu" id="repair_order_menu">-->
+<!--        <field name="name">Repair Order</field>-->
+<!--        <field name="parent_id" ref="xmlid of parent menu"/> &lt;!&ndash; TODO &ndash;&gt;-->
+<!--        <field name="action" ref="repair_order_act_window"/>-->
+<!--        <field name="sequence" eval="16"/> &lt;!&ndash; TODO &ndash;&gt;-->
+<!--    </record>-->
+
+</odoo>
