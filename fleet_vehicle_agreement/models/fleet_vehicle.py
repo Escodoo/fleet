@@ -38,7 +38,7 @@ class FleetVehicle(models.Model):
             ])
             for stock_move_line in stock_move_lines:
                 agreement = stock_move_line.picking_id.sale_id.agreement_id
-                if agreement.end_date and agreement.end_date >= fields.Datetime.now() or not agreement.end_date:
+                if agreement.end_date and agreement.end_date >= fields.Datetime.now().date() or not agreement.end_date:
                     agreement_id = agreement
             if agreement_id:
                 rec.agreement_id = agreement_id[0]
