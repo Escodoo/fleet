@@ -17,29 +17,25 @@ class Agreement(models.Model):
         domain=[],
         context={},
         help="Vehicles related to this agreement",
+        copy=False,
     )
 
-    #
-    # vehicle_ids = fields.One2many("fleet.vehicle", "agreement_id", string="Vehicles")
-    #
-    # vehicle_count = fields.Integer(
-    #     compute="_compute_vehicle_count", string="# Vehicles"
-    # )
-    #
-    # @api.depends("vehicle_ids")
-    # def _compute_vehicle_count(self):
-    #     for rec in self:
-    #         rec.vehicle_count = len(rec.vehicle_ids)
-    #
-    # def action_view_vehicle(self):
-    #     for rec in self:
-    #         action = rec.env.ref("fleet.fleet_vehicle_action").read()[0]
-    #         action["context"] = {}
-    #         if len(rec.vehicle_ids) == 1:
-    #             action["views"] = [
-    #                 (rec.env.ref("fleet.fleet_vehicle_view_form").id, "form")
-    #             ]
-    #             action["res_id"] = rec.vehicle_ids.ids[0]
-    #         else:
-    #             action["domain"] = [("id", "in", rec.vehicle_ids.ids)]
-    #         return action
+    fleet_vehicle_ids = fields.Many2many(
+        'fleet.vehicle', compute='_compute_fleet_vehicle_ids',
+        string='Fleet Vehicles associated to this agreement')
+
+    @api.multi
+    def _compute_fleet_vehicle_ids(self):
+        for rec in self:
+            vehicles = self.env['fleet.vehicle']
+            pickings = self.env['stock.picking'].search([
+                ('state', '=', 'done'),
+                ('picking_type_code', '=', 'outgoing'),
+                ('sale_id', '=', rec.sale_ids.id)
+            ])
+            if pickings:
+                for picking in pickings:
+                    for move_line in picking.move_line_ids:
+                        if move_line.lot_id.fleet_vehicle_id:
+                            vehicles |= move_line.lot_id.fleet_vehicle_id
+            rec.fleet_vehicle_ids = vehicles

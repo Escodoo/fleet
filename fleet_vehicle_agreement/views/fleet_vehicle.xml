@@ -10,7 +10,19 @@
         <field name="arch" type="xml">
             <xpath expr="//notebook" position="inside">
                 <page name="agreements" string="Agreements">
-                   <field name="agreement_ids" />
+                    <group><field name="agreement_id"/></group>
+                    <field name="agreement_ids">
+                        <tree string="Agreements" default_order='name'>
+                            <field name="name"/>
+                            <field name="partner_id"/>
+                            <field name="company_id"/>
+                            <field name="parent_agreement_id"/>
+                            <field name="agreement_type_id"/>
+                            <field name="agreement_subtype_id"/>
+                            <field name="stage_id"/>
+                            <field name="active" invisible="1"/>
+                        </tree>
+                    </field>
                 </page>
             </xpath>
         </field>

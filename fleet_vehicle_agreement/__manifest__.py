@@ -15,8 +15,8 @@
     "website": "https://github.com/OCA/fleet",
     "images": ["static/description/banner.png"],
     "depends": [
-        "fleet_vehicle_notebook",
-        "agreement",
+        "fleet_vehicle_stock",
+        "agreement_legal_sale",
     ],
     "data": [
         "views/agreement.xml",
