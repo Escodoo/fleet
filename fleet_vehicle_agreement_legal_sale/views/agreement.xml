@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2021 - TODAY, Marcel Savegnago <marcel.savegnago@escodoo.com.br>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+     <record id="agreement_form_view" model="ir.ui.view">
+        <field name="name">agreement.form (in fleet_vehicle_agreement_legal_sale)</field>
+        <field name="model">agreement</field>
+        <field name="inherit_id"
+               ref="agreement_legal.partner_agreement_form_view"/>
+        <field name="arch" type="xml">
+            <page name="signature" position="after">
+                <page name="fleet_vehicle" string="Fleet Vehicles">
+                    <field name="fleet_vehicle_ids" nolabel="1"/>
+                    <field name="vehicle_ids" nolabel="1"/>
+                  </page>
+            </page>
+        </field>
+    </record>
+
+</odoo>
