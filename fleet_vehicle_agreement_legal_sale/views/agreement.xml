@@ -4,7 +4,7 @@
 <odoo>
 
      <record id="agreement_form_view" model="ir.ui.view">
-        <field name="name">agreement.form (in fleet_vehicle_agreement)</field>
+        <field name="name">agreement.form (in fleet_vehicle_agreement_legal_sale)</field>
         <field name="model">agreement</field>
         <field name="inherit_id"
                ref="agreement_legal.partner_agreement_form_view"/>
