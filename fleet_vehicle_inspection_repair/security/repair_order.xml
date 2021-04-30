@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2021 - TODAY, Marcel Savegnago <marcel.savegnago@escodoo.com.br>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+<!--    <record model="ir.model.access" id="repair_order_access_name"> &lt;!&ndash; TODO acl id &ndash;&gt;-->
+<!--        <field name="name">repair.order access name</field> &lt;!&ndash; TODO acl name &ndash;&gt;-->
+<!--        <field name="model_id" ref="model_repair_order"/>-->
+<!--        &lt;!&ndash; TODO review and adapt &ndash;&gt;-->
+<!--        <field name="group_id" ref="base.group_user"/>-->
+<!--        <field name="perm_read" eval="1"/>-->
+<!--        <field name="perm_create" eval="0"/>-->
+<!--        <field name="perm_write" eval="0"/>-->
+<!--        <field name="perm_unlink" eval="0"/>-->
+<!--    </record>-->
+
+</odoo>
