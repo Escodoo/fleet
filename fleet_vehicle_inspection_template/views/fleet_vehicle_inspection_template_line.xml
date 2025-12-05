@@ -41,10 +41,10 @@
         >fleet.vehicle.inspection.template.line.tree (in fleet_vehicle_inspection_template)</field>
         <field name="model">fleet.vehicle.inspection.template.line</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="inspection_template_id" readonly="1" />
                 <field name="inspection_template_item_id" />
-            </tree>
+            </list>
         </field>
     </record>
     <record
@@ -53,6 +53,6 @@
     >
         <field name="name">Inspection Template Line</field>
         <field name="res_model">fleet.vehicle.inspection.template.line</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
 </odoo>

@@ -25,13 +25,13 @@
                             name="inspection_template_lines"
                         >
                             <field name="inspection_template_line_ids">
-                                <tree editable="bottom">
+                                <list editable="bottom">
                                     <field name="sequence" widget="handle" />
                                     <field
                                         name="inspection_template_item_id"
                                         string="Inspection Template Line"
                                     />
-                                </tree>
+                                </list>
                             </field>
                         </page>
                         <page string="Notes" name="notes_information">
@@ -64,9 +64,9 @@
         >fleet.vehicle.inspection.template.tree (in fleet_vehicle_inspection_template)</field>
         <field name="model">fleet.vehicle.inspection.template</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="name" />
-            </tree>
+            </list>
         </field>
     </record>
     <record
@@ -75,7 +75,7 @@
     >
         <field name="name">Inspection Template</field>
         <field name="res_model">fleet.vehicle.inspection.template</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
     <record model="ir.ui.menu" id="fleet_vehicle_inspection_template_menu">
         <field name="name">Inspection Template</field>
