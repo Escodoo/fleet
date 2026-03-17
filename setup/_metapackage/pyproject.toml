@@ -1,6 +1,6 @@
 [project]
 name = "odoo-addons-oca-fleet"
-version = "19.0.20260225.0"
+version = "19.0.20260317.0"
 dependencies = [
     "odoo-addon-fleet_vehicle_calendar_year==19.0.*",
     "odoo-addon-fleet_vehicle_category==19.0.*",
@@ -8,6 +8,7 @@ dependencies = [
     "odoo-addon-fleet_vehicle_fuel_capacity==19.0.*",
     "odoo-addon-fleet_vehicle_fuel_type_ethanol==19.0.*",
     "odoo-addon-fleet_vehicle_inspection==19.0.*",
+    "odoo-addon-fleet_vehicle_purchase==19.0.*",
 ]
 classifiers=[
     "Programming Language :: Python",
