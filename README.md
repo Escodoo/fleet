@@ -30,6 +30,7 @@ addon | version | maintainers | summary
 [fleet_vehicle_purchase](fleet_vehicle_purchase/) | 19.0.1.0.0 |  | Allow to integrate Purcase with Fleet Vehicles
 [fleet_vehicle_service_activity](fleet_vehicle_service_activity/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Activity alerts for fleet services
 [fleet_vehicle_service_kanban](fleet_vehicle_service_kanban/) | 19.0.1.0.0 | <a href='https://github.com/mamcode'><img src='https://github.com/mamcode.png' width='32' height='32' style='border-radius:50%;' alt='mamcode'/></a> <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Add features of kanban to logs of vehicle services.
+[fleet_vehicle_service_services](fleet_vehicle_service_services/) | 19.0.1.0.0 |  | Add subservices in Services.
 
 [//]: # (end addons)
 
